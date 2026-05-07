@@ -14,7 +14,7 @@ MODEL_PATH = '/opt/airflow/models/sarima_model.pkl'
 TROY_OUNCE_TO_GRAM = 31.1034768
 
 DB_USER = "airflow"
-DB_PASS = " airflow"
+DB_PASS = "airflow"
 DB_HOST = "postgres"
 DB_PORT = "5432"
 
@@ -30,7 +30,6 @@ with DAG(
     schedule_interval='0 8 * * 1-5',
     start_date=datetime(2024, 1, 1),
     catchup=False,
-    ranges=False,
     tags=['gold', 'sarima', 'production']
 ) as dag:
 
@@ -95,7 +94,7 @@ with DAG(
         
         try:
             import yfinance as yf
-            fx = yf.download(tikers="IDR=X", period="5d", interval="1d", auto_adjust=False, progress=False, multi_level_index=False).dropna()
+            fx = yf.download(tickers="IDR=X", period="5d", interval="1d", auto_adjust=False, progress=False, multi_level_index=False).dropna()
             rate = float(fx["Close"].iloc[-1])
         except Exception:
             rate = 17420.00
