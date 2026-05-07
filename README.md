@@ -25,7 +25,7 @@ Sistem prediksi harga emas untuk hari besok dan beberapa hari ke depan menggunak
 Time Series Forecasting dengan perbandingan 3 model: ARIMA, SARIMA, dan Prophet. Data dianalisis melalui visualisasi, decomposition, ADF test, serta ACF dan PACF plot. Model dievaluasi menggunakan MAE, RMSE, MAPE, dan R².
 
 | Model | MAE | RMSE | MAPE (%) | R² |
-|---|---|---|---|
+|---|---|---|---|---|
 | **SARIMA** ✅ | **1061.62** | **1356.14** | **28.67** | **-1.26** |
 | PROPHET | 1136.60 | 1419.41 | 31.10 | -1.48 |
 | ARIMA | 1156.37 | 1463.60 | 31.37 | -1.64 |
@@ -36,8 +36,8 @@ Time Series Forecasting dengan perbandingan 3 model: ARIMA, SARIMA, dan Prophet.
 **Python** · Pandas · NumPy · Statsmodels · Pmdarima · Prophet · Plotly · Streamlit · PostgreSQL · Apache Airflow · Docker · yfinance
 
 ## 🖥️ Output Proyek
-- **Live Dashboard**: Harga emas real-time + prediksi besok (USD & IDR/Gram)
-- **Prediksi Custom**: Pilih tanggal spesifik untuk estimasi harga
+- [**StellarGold Dashboard**](https://www.tableau.com/tableau-login-hub): Harga emas real-time + prediksi besok (USD & IDR/Gram)
+- [**StellarGold APP**](https://huggingface.co/spaces/Darkaes/Stellar-Gold): Pilih tanggal spesifik untuk estimasi harga
 
 ## 📂 Struktur Proyek
 ```text
