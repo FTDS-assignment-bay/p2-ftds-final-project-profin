@@ -56,7 +56,9 @@ StellarGold/
 |   └── .env
 |   
 ├── Data Science/
-|   └── (Dikelola oleh Data Scientist)
+|   └── data_science_time_series.ipynb
+|   └── data_science_time_series_inference.ipynb
+|   └── sarima_final_model.7z
 ├── README.md
 └── stellargold.png
 ```
